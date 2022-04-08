@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Let's play! Rock, Paper, Scissors!</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Secular+One&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!--Animated background-->
+  <div class="background">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <!--Game Section-->
+    <section class="game">
+      <div class="header">
+        <p class="tagline">A Funny Games Group® Presents</p>
+        <h1 class="game-title">
+          the zombie <br />
+          rock paper scissors
+        </h1>
+      </div>
+
+      <div id="start-game-wrapper" class="visible">
+        <h2 class="game-subtitle">Enter how many rounds you want to play</h2>
+        <input type="number" id="max-moves" placeholder="total rounds">
+        <button id="start-button" class="clickButton">let's start</button>
+      </div>
+
+      <div id="game-wrapper">
+        <div id="moves">
+          <p id="playerMove"></p>
+          <p id="computerMove"></p>
+        </div>
+
+        <div id="scoreboard">
+          <div>
+            <p>Your Score:</p>
+            <p id="playerScore">0</p>
+          </div>
+          <div>
+            <p>mob zombie score:</p>
+            <p id="computerScore">0</p>
+          </div>
+        </div>
+
+        <div id="btn">
+          <button type="button" class="clickButton" id="play-rock">
+            Rock
+          </button>
+          <button type="button" class="clickButton" id="play-paper">
+            Paper
+          </button>
+          <button type="button" class="clickButton" id="play-scissors">
+            Scissors
+          </button>
+        </div>
+
+      </div>
+      <div id="messages" class="score-info"></div>
+    </section>
+    <script src="js/functions.js"></script>
+    <script src="js/script.js"></script>
+  </div>
+</body>
+
+</html>

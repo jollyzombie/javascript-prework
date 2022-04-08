@@ -1,0 +1,426 @@
+/*Variables*/
+
+$color-light: #fff;
+
+$light-green: #A9FF70;
+$color-green: #66ff00;
+$dark-green: #49B800;
+$green-border: #317A00;
+$green-shadow: #91FF47;
+
+$violet: #41275a;
+
+$font-creepy: 'Creepster',
+cursive;
+$font-normal: 'Secular One',
+sans-serif;
+
+
+
+/*Animated Background*/
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  top: 0;
+  left: 0;
+  background: #41275a;
+  overflow: hidden;
+}
+
+.background span {
+  width: 2vmin;
+  height: 2vmin;
+  border-radius: 2vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 20;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.background span:nth-child(0) {
+  color: #5ac47a;
+  top: 52%;
+  left: 18%;
+  animation-duration: 209s;
+  animation-delay: -145s;
+  transform-origin: -13vw 8vh;
+  box-shadow: 4vmin 0 1.043902765253312vmin currentColor;
+}
+
+.background span:nth-child(1) {
+  color: #5ac47a;
+  top: 86%;
+  left: 22%;
+  animation-duration: 88s;
+  animation-delay: -46s;
+  transform-origin: -24vw -10vh;
+  box-shadow: -4vmin 0 1.2596827200770069vmin currentColor;
+}
+
+.background span:nth-child(2) {
+  color: #5ac47a;
+  top: 8%;
+  left: 98%;
+  animation-duration: 74s;
+  animation-delay: -280s;
+  transform-origin: -2vw -10vh;
+  box-shadow: -4vmin 0 0.7393974082339809vmin currentColor;
+}
+
+.background span:nth-child(3) {
+  color: #5ac47a;
+  top: 96%;
+  left: 28%;
+  animation-duration: 67s;
+  animation-delay: -189s;
+  transform-origin: -1vw 21vh;
+  box-shadow: -4vmin 0 1.3242383318588171vmin currentColor;
+}
+
+.background span:nth-child(4) {
+  color: #734b6d;
+  top: 50%;
+  left: 22%;
+  animation-duration: 89s;
+  animation-delay: -178s;
+  transform-origin: -4vw 0vh;
+  box-shadow: -4vmin 0 0.8003018328710099vmin currentColor;
+}
+
+.background span:nth-child(5) {
+  color: #734b6d;
+  top: 79%;
+  left: 52%;
+  animation-duration: 236s;
+  animation-delay: -286s;
+  transform-origin: -7vw -12vh;
+  box-shadow: -4vmin 0 0.762059849372893vmin currentColor;
+}
+
+.background span:nth-child(6) {
+  color: #734b6d;
+  top: 51%;
+  left: 14%;
+  animation-duration: 250s;
+  animation-delay: -98s;
+  transform-origin: 16vw 21vh;
+  box-shadow: 4vmin 0 1.4927364415104136vmin currentColor;
+}
+
+.background span:nth-child(7) {
+  color: #734b6d;
+  top: 10%;
+  left: 57%;
+  animation-duration: 184s;
+  animation-delay: -123s;
+  transform-origin: 19vw 19vh;
+  box-shadow: 4vmin 0 0.5952178354376438vmin currentColor;
+}
+
+.background span:nth-child(8) {
+  color: #734b6d;
+  top: 86%;
+  left: 89%;
+  animation-duration: 224s;
+  animation-delay: -101s;
+  transform-origin: 14vw -24vh;
+  box-shadow: 4vmin 0 1.4983892718626002vmin currentColor;
+}
+
+.background span:nth-child(9) {
+  color: #5ac47a;
+  top: 95%;
+  left: 17%;
+  animation-duration: 72s;
+  animation-delay: -138s;
+  transform-origin: -11vw -17vh;
+  box-shadow: 4vmin 0 0.5844616247011691vmin currentColor;
+}
+
+.background span:nth-child(10) {
+  color: #5ac47a;
+  top: 84%;
+  left: 56%;
+  animation-duration: 190s;
+  animation-delay: -14s;
+  transform-origin: 21vw -9vh;
+  box-shadow: -4vmin 0 1.2736735806185622vmin currentColor;
+}
+
+.background span:nth-child(11) {
+  color: #734b6d;
+  top: 90%;
+  left: 22%;
+  animation-duration: 297s;
+  animation-delay: -64s;
+  transform-origin: 1vw -17vh;
+  box-shadow: 4vmin 0 1.2470122690923962vmin currentColor;
+}
+
+.background span:nth-child(12) {
+  color: #5ac47a;
+  top: 36%;
+  left: 34%;
+  animation-duration: 207s;
+  animation-delay: -12s;
+  transform-origin: -23vw -15vh;
+  box-shadow: -4vmin 0 0.7119548401658069vmin currentColor;
+}
+
+.background span:nth-child(13) {
+  color: #734b6d;
+  top: 54%;
+  left: 79%;
+  animation-duration: 74s;
+  animation-delay: -158s;
+  transform-origin: -18vw -10vh;
+  box-shadow: -4vmin 0 1.0594974643898118vmin currentColor;
+}
+
+.background span:nth-child(14) {
+  color: #734b6d;
+  top: 81%;
+  left: 95%;
+  animation-duration: 81s;
+  animation-delay: -100s;
+  transform-origin: -16vw -10vh;
+  box-shadow: 4vmin 0 1.0763852531281453vmin currentColor;
+}
+
+.background span:nth-child(15) {
+  color: #734b6d;
+  top: 79%;
+  left: 33%;
+  animation-duration: 233s;
+  animation-delay: -247s;
+  transform-origin: 23vw 9vh;
+  box-shadow: 4vmin 0 0.522064728848439vmin currentColor;
+}
+
+.background span:nth-child(16) {
+  color: #734b6d;
+  top: 65%;
+  left: 71%;
+  animation-duration: 123s;
+  animation-delay: -283s;
+  transform-origin: -10vw 17vh;
+  box-shadow: 4vmin 0 0.8177141898014908vmin currentColor;
+}
+
+.background span:nth-child(17) {
+  color: #734b6d;
+  top: 40%;
+  left: 81%;
+  animation-duration: 112s;
+  animation-delay: -104s;
+  transform-origin: 1vw -21vh;
+  box-shadow: -4vmin 0 1.1019824825601128vmin currentColor;
+}
+
+.background span:nth-child(18) {
+  color: #734b6d;
+  top: 29%;
+  left: 74%;
+  animation-duration: 203s;
+  animation-delay: -233s;
+  transform-origin: -11vw -20vh;
+  box-shadow: -4vmin 0 1.4943179709236663vmin currentColor;
+}
+
+.background span:nth-child(19) {
+  color: #734b6d;
+  top: 21%;
+  left: 30%;
+  animation-duration: 10s;
+  animation-delay: -2s;
+  transform-origin: 2vw -18vh;
+  box-shadow: -4vmin 0 1.1621699338989095vmin currentColor;
+}
+
+
+/*Global Styles*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-attachment: fixed;
+  box-sizing: border-box;
+  color: $color-light;
+  text-align: center;
+  line-height: 1.4;
+  font-family: $font-normal;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 1.3px;
+}
+
+section {
+  padding: 0 0 30px;
+  ;
+  height: 100vh;
+}
+
+/*Game Styles*/
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .tagline,
+  h1,
+  h2 {
+    letter-spacing: 3px;
+    ;
+    padding: 0 0 45px;
+  }
+
+  .game-title {
+    font-size: 100px;
+    line-height: 1.2;
+    font-family: $font-creepy;
+    color: $color-green;
+  }
+
+  .game-subtitle {
+    font-size: 16px;
+    padding: 0 0 50px;
+  }
+}
+
+#scoreboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+
+  #playerScore,
+  #computerScore {
+    color: $color-green;
+    font-size: 88px;
+    font-family: $font-creepy;
+    padding: 0 120px 20px;
+
+  }
+}
+
+/*printMessage*/
+#messages {
+  padding: 25px 0;
+}
+
+.score-info {
+  margin-top: 50px;
+  font-family: $font-normal;
+  font-size: 24px;
+  letter-spacing: 1.3px;
+  color: $color-green;
+}
+
+/*Buttons*/
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+
+  &.clickButton {
+    font-weight: 600;
+    color: $green-border;
+    font-size: 20px;
+    font-family: $font-creepy;
+    letter-spacing: 1.3px;
+    padding: 15px 32px;
+    background: $light-green;
+    border: 2px solid $green-border;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    margin: 5px 12px;
+
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $dark-green;
+      border-radius: inherit;
+      transform: translate3d(0, 10px, -17px);
+      transition: transform 1s;
+    }
+
+    &:hover {
+      background: $light-green;
+      transform: translate(0, 4px);
+
+      &::before {
+        transform: translate3d(0, 8px, -17px);
+      }
+    }
+
+    &:active {
+      background: $color-green;
+      transform: translate(0, 12px);
+
+      &::before {
+        transform: translate3d(0, 0, -17px);
+      }
+    }
+  }
+}
+
+#game-wrapper,
+#start-game-wrapper {
+  display: none;
+
+  &.visible {
+    display: block;
+  }
+}
+
+#max-moves {
+  display: block;
+  background: transparent;
+  border: 2px solid $color-green;
+  border-radius: 15px;
+  padding: 10px 0;
+  max-width: 160px;
+  margin: 50px auto;
+  font-family: $font-creepy;
+  text-align: center;
+  font-size: 24px;
+  color: $color-light;
+
+  &::placeholder {
+    font-family: $font-normal;
+    font-size: 11px;
+    color: $light-green;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    opacity: 0.5;
+    transform: translateY(-30%);
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
